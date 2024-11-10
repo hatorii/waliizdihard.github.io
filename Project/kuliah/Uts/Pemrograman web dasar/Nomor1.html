@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Register</title>
+  </head>
+  <body style="align-content: center; width: 800px; margin: auto;">
+    <div style="background-color: #45a849"; >
+      <marquee behavior="scroll" direction="right" >
+        <p style="font-family: Arial, Helvetica, sans-serif; color: white; font-size: 14px; margin: 9px;"><b>Selamat Datang di Formulir Pendaftaran! Harap isi data dengan lengkap dan benar.</b></p>
+      </marquee>
+    </div>
+    <div style="justify-content: space-between; display: flex;align-items: center; text-align: center; margin-top: 15px;">
+        <img src="Logo.png" alt="Logo sebelah kiri"; style="width: 100px; margin-left: 19%;" ;>
+        <h2 style="font-family: sans-serif;">Formulir Pendaftaran</h2>
+        <img src="Logo.png" alt="Logo sebelah kanan"; style="width: 100px; margin-right: 15%;";>
+    </div>
+
+    <form style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; margin-left: 15%;">
+            <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                <label for="nama" style="width: 120px;">Nama Lengkap:</label>
+                <input type="text" id="nama" style="flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 5px; max-width: 450px;">
+            </div>
+
+            <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                <label for="email" style="width: 120px;">Email:</label>
+                <input type="email" id="email" style="flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 5px; max-width: 450px;">
+            </div>
+
+            <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                <label for="telepon" style="width: 120px;">Nomor Telepon:</label>
+                <input type="tel" id="telepon" style="flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 5px; max-width: 450px;">
+            </div>
+
+            <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                <label for="tgl" style="width: 120px;">Tanggal Lahir:</label>
+                <input type="date" id="tgl" style="flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 5px; max-width: 450px;">
+            </div>
+
+            <div style="display: flex; align-items: center; margin-bottom: 15px; max-width: 450px;">
+                <label style="width: 120px;">Jenis Kelamin:</label>
+                <div style="flex: 1; font-weight: lighter;">
+                    <input type="radio" id="laki" name="gender" value="Laki-laki">
+                    <label for="laki" style="margin-right: 10px;">Laki-laki</label>
+                    <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </div>
+            </div>
+
+            <div style="display: flex; align-items: center; margin-bottom: 15px; max-width: 590px;">
+                <label for="prodi" style="width: 120px;">Program Studi:</label>
+                <select id="prodi" style="flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 5px; font-weight: lighter; font-size: medium;">
+                    <option>Teknik Informatika</option>
+                    <option>Sistem Informasi</option>
+                    <option>Fisika</option>
+                </select>
+            </div>
+
+            <div style="display: flex; align-items: flex-start; margin-bottom: 15px; max-width: 590px;">
+              <label for="alamat" style="width: 120px; margin-top: 5px;">Alamat:</label>
+                <textarea id="alamat" style="flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 5px;" rows="3"></textarea>
+            </div>
+
+            <div style="display: flex; justify-content: center; margin-top: 10px;">
+                <button type="submit" style="padding: 8px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">Kirim</button>
+            </div>
+        </form>
+    </div>
+  </body>
+</html>
